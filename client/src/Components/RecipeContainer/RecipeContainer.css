@@ -1,0 +1,94 @@
+
+.card_container{
+    animation: fadeIn ease 0.5s;
+    -webkit-animation: fadeIn ease 0.5s;
+    -moz-animation: fadeIn ease 0.5s;
+    -o-animation: fadeIn ease 0.5s;
+    -ms-animation: fadeIn ease 0.5s;
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 433px;
+    text-align: center;
+    background-color: rgb(238, 236, 230);
+    margin-bottom: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: none;
+    color: #111111;
+    box-shadow: white;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+ 
+
+.card_title{
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 25px;
+  text-align: left;
+  font-family: 'Nimbus Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.image img {
+    display: block;
+    position: absolute;
+    height: 50%;
+    width: 83%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 30px;
+    margin-top: 60px;
+
+}
+
+.diets_card{
+    text-align: justify;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    line-height: 0.7;
+  
+    margin-left: 30px;
+    margin-top: 285px;
+
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    
+}
+
+.button_card{
+    margin-top: 450px;
+    cursor: pointer;
+    color: #161616;
+    background-color: rgb(238, 236, 230);
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    /* border: 1px solid #000000; */
+    border: none;
+    padding: 8px;
+} 
+
+.button_card:hover {
+    /* transition: transform .5s ease;
+    transform: scale(1.1); */
+    text-decoration: underline;
+    text-underline-position: auto;
+
+}

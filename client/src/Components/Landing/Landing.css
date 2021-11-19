@@ -1,0 +1,51 @@
+.landing_container{
+  background: url(img/kithtreats.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} 
+
+.intro_container {
+  margin-bottom: 600px;
+}
+
+.welcome_text {
+  margin-bottom: 20px;
+ font-family: 'Nimbus Sans', sans-serif;
+ font-size: 10px;
+ letter-spacing: 0.4px;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+.button_home {
+    cursor: pointer;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    width: 96px;
+    height: 35px;
+    border: 1px solid #000000;
+    background-color: rgba(236, 229, 229, 0.288);
+}
+.button_home:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .link_text { 
+    color: rgb(0, 0, 0);
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+   } 
+
+
+
+

@@ -1,0 +1,40 @@
+
+.page_button{
+    cursor: pointer;
+    color: #161616;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.page_button1 {
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.page_button:hover{
+    background-image: linear-gradient(to right, #ffffff 0%, #fafafa  51%, #ffffff  100%);
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}

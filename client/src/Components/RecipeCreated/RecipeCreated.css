@@ -1,0 +1,12 @@
+.wait {
+    margin-top:20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 940px;
+    width: 100%;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}

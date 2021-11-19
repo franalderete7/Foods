@@ -1,0 +1,152 @@
+.add_recipe_container{
+    display: wrap;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 470px;
+    background-size: cover; 
+    background-position: left;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    width: 35%;
+    height: 80%;
+    border: 1px solid #000000
+    
+}
+
+.danger{
+    color: red;
+}
+
+
+.h1_title{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.text_title_form{
+    margin-top: 12px;
+    margin-bottom: 9px;
+    display: flex;
+    margin-left: 30px;
+    align-items: flex-start;
+    color: rgb(12, 12, 12);
+    justify-content: flex-start;
+}
+
+.title_input {
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    width: 440px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+.title_input:focus {
+    outline: none
+}
+
+.text_input {
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    width: 440px;
+    height: 100px;
+    box-shadow: 0 0 0 0 white;
+    margin-right: 2px;
+    
+}
+
+.text_input:focus {
+    outline: none
+}
+
+.select_input {
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 415px;
+}
+
+.select_input:focus {
+    outline: none
+}
+
+.image_input {
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    width: 440px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+.image_input:focus {
+    outline: none
+}
+
+.diet_name {
+    position: relative;
+}
+
+.diet_input {
+    position: relative;
+}
+
+.diet_input:focus {
+    outline: none
+}
+
+
+.map_diets li{
+    color: rgb(17, 17, 17);
+    display:inline-flex;
+    width: 100%;
+    margin-left: -30px;
+
+}
+
+.submit_button{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Nimbus Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    position: static;
+    right: 100px;
+    bottom: 658px;
+    width: 96px;
+    height: 35px;
+    border: 1px solid #000000;
+    color:#ffffff;
+    background-color: black;
+    
+}
+
+.submit_button:hover{
+   transition: transform .5s ease;
+   transform: scale(1.1);
+   opacity: 0.5;
+}
+
