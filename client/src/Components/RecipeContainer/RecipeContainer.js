@@ -11,7 +11,7 @@ export default function RecipeContainer (props) {
             <h1 className='card_title'>{ props.recipe.title }</h1>
             <div className="diets_card">
                     {props.recipe.diets?.map((diet, index) => (
-                        <div key={diet.index}>
+                        <div key={recipe.id}>
                             <p>
                                 {diet}
                             </p>

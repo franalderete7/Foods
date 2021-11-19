@@ -74,6 +74,7 @@ const { API_KEY } = process.env;
           healthScore: apiRecipes.data.healthScore,
           analyzedInstructions: analyzedInstructionsMap
       }
+      
       if(apiRecipes) return res.send(objectResponse)
       
     } else {

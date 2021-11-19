@@ -37,7 +37,7 @@ export default function Nav() {
                className="box_search"
                name='search'  
                onChange={(e) => handleChange(e)}
-               placeholder="Search..."
+               placeholder=" Search..."
                value={title}
                type="text"/>
                    <button className="search_button" type="submit">

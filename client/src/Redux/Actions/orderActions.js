@@ -8,6 +8,7 @@ export const orderAsc = (type) => (dispatch, getState) => {
   const filterBy = getState().filterBy
   const recipes = getState().recipes.slice()
   const filtered = getState().filteredRecipes.slice()
+  
   if (filterBy === 'All') {
     if (type === 'higher_score') {
       const orderedRecipes = recipes.sort(
