@@ -20,12 +20,13 @@ function Home() {
   const [page, setPage] = useState(1);
   const [recipesPerPage] = useState(9);
 
+
     
     useEffect(() => {
        if(filterBy === 'All' && orderBy === 'Select') {
-        setAllRecipes(recipes.slice())
+        setAllRecipes(recipes)
     } else {
-        setAllRecipes(filteredRecipes.slice())
+        setAllRecipes(filteredRecipes)
     }
        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [filterBy, orderBy, recipes, filteredRecipes]);  
@@ -58,7 +59,7 @@ function Home() {
       <div className="container">
           <>
             <FilterOptions />
-            <DisplayRecipes recipes={currentPage}/>
+            {recipes.length > 0 ?  <DisplayRecipes recipes={currentPage}/> : <h1 className="recipes_not_found">No recipes found...</h1>}
             <Pagination
               recipePerPage={recipesPerPage}
               totalRecipes={allRecipes.length}

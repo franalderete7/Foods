@@ -23,11 +23,13 @@ export default function Nav() {
 
 
     const handleSubmit = (e) => {
-        alert("recipe not found")
         e.preventDefault();
+        if(title === "") {
+        dispatch(getRecipes(e))
+        } else {
         dispatch(searchRecipes(title))
         setTitle("")
-
+        }
     }
 
 
@@ -35,7 +37,7 @@ export default function Nav() {
         <div className='container-nav'>
             <NavLink to= '/home' 
                 className='nav_logo'
-                onClick={(e) => {dispatch(reset()); dispatch(getRecipes());}}
+                onClick={(e) => {dispatch(reset(e)); dispatch(getRecipes(e));}}
                 > Foods App
 
             </NavLink>
