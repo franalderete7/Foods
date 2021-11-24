@@ -8,16 +8,17 @@ import { getDiets} from '../../Redux/Actions/dietsActions';
 import './Home.css'
 
 function Home() {
+  
+  const dispatch = useDispatch()
+
   const {recipes} = useSelector((state) => state);
   const {filteredRecipes} = useSelector((state) => state);
   const {filterBy} = useSelector((state) => state);
   const {orderBy} = useSelector((state) => state);
 
-   const [allRecipes, setAllRecipes] = useState([])
-    const [page, setPage] = useState(1);
-    const [recipesPerPage] = useState(9);
-
-    const dispatch = useDispatch()
+  const [allRecipes, setAllRecipes] = useState([])
+  const [page, setPage] = useState(1);
+  const [recipesPerPage] = useState(9);
 
     
     useEffect(() => {
@@ -27,7 +28,7 @@ function Home() {
         setAllRecipes(filteredRecipes.slice())
     }
        // eslint-disable-next-line react-hooks/exhaustive-deps
-      }, [filterBy, orderBy, recipes]);  
+      }, [filterBy, orderBy, recipes, filteredRecipes]);  
 
     useEffect(() => {
         dispatch(getRecipes())
@@ -59,9 +60,9 @@ function Home() {
             <FilterOptions />
             <DisplayRecipes recipes={currentPage}/>
             <Pagination
-              recipePerPage={recipesPerPage} // 9
-              totalRecipes={allRecipes.length} 
-              paginate={paginate} // function
+              recipePerPage={recipesPerPage}
+              totalRecipes={allRecipes.length}
+              paginate={paginate}
             />
           </>
       </div>

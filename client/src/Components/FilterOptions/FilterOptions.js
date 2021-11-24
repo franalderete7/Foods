@@ -6,8 +6,8 @@ import { orderAsc, orderDesc } from '../../Redux/Actions/orderActions';
 import './FilterOptions.css'; 
 
 function FilterOptions() {
-  const {diets} = useSelector((store) => store);
   const dispatch = useDispatch(); 
+  const {diets} = useSelector((store) => store);
 
     const handleFilters = (e) => {
         if (e.target.value === "higher_score" || e.target.value === "asc_name" ) {

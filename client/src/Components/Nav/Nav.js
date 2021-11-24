@@ -1,27 +1,35 @@
 import React, {useState} from 'react';
-import { useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { NavLink} from 'react-router-dom';
 import './Nav.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSearch} from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { searchRecipes } from '../../Redux/Actions/recipesActions';
 import { getRecipes} from '../../Redux/Actions/recipesActions';
 import { reset } from '../../Redux/Actions/orderActions';
 
 
 export default function Nav() {
+
+
     const dispatch = useDispatch(); 
+
+
     const [title, setTitle] = useState("");
 
     const handleChange = (e) => {
         setTitle(e.target.value);
     }
 
+
     const handleSubmit = (e) => {
+        alert("recipe not found")
         e.preventDefault();
         dispatch(searchRecipes(title))
         setTitle("")
-       }
+
+    }
+
 
     return (
         <div className='container-nav'>
@@ -42,8 +50,8 @@ export default function Nav() {
                type="text"/>
                    <button className="search_button" type="submit">
                        <FontAwesomeIcon icon={faSearch}/>
-                       </button>
-               </form>
+                   </button> 
+                </form>
             </div>
            <NavLink to={`/addRecipe`}>
                 <button className="create_button" type="submit">

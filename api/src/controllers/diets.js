@@ -31,4 +31,5 @@ async function getDiets (req, res, next) {
 }
 //
 module.exports = {
-getDiets}
+  getDiets
+}

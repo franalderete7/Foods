@@ -14,8 +14,7 @@ export function AddRecipe () {
 
   useEffect(() => { 
     dispatch(getDiets());
-    // eslint-disable-next-line
-  }, []);
+  }, [dispatch]);
 
   const [input, setInput] = useState({
     title: '',

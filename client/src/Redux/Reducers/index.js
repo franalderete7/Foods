@@ -1,7 +1,8 @@
 import { 
   GET_RECIPES,
   GET_RECIPES_DETAIL, 
-  SEARCH_RECIPES, 
+  SEARCH_RECIPES,
+  SEARCH_ERROR,
   CREATE_RECIPE, 
   POST_NEW_RECIPE
 } from '../Actions/recipesActions';
@@ -19,6 +20,7 @@ import {
 
 const initialState = { 
     recipes: [],
+    error: '',
     diets : [],
     recipeById: {},
     createdRecipe: [],
@@ -54,11 +56,18 @@ function rootReducer(state = initialState, action) {
           }
         
         case SEARCH_RECIPES :
-          console.log(action.payload) 
           return {
             ...state,
             recipes: action.payload
           }
+
+        case SEARCH_ERROR :
+          return {
+            ...state,
+            recipes: [],
+            error: action.payload
+          }
+      
         
         //DIETS: 
        case GET_DIETS:
